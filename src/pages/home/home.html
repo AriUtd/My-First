@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title style="text-align:center">Sign In Here! <button id="btn3" ion-button color="danger" (click)="registerPage()">Not an User Yet?<br>Sign Up</button></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" #username></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" #password></ion-input>
+    </ion-item>    
+  </ion-list>
+
+  <button ion-button block (click)="loginUser()">Sign In</button>
+</ion-content>
